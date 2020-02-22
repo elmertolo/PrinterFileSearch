@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnExtract = new System.Windows.Forms.Button();
             this.txtYear = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSTexFile = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btnSearch
+            // btnExtract
             // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(78, 75);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(92, 35);
-            this.btnSearch.TabIndex = 0;
-            this.btnSearch.Text = "Extract";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnExtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExtract.Location = new System.Drawing.Point(96, 74);
+            this.btnExtract.Name = "btnExtract";
+            this.btnExtract.Size = new System.Drawing.Size(92, 35);
+            this.btnExtract.TabIndex = 0;
+            this.btnExtract.Text = "Extract";
+            this.btnExtract.UseVisualStyleBackColor = true;
+            this.btnExtract.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtYear
             // 
@@ -63,23 +65,45 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Year :";
             // 
-            // button1
+            // btnSTexFile
             // 
-            this.button1.Location = new System.Drawing.Point(139, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSTexFile.Location = new System.Drawing.Point(96, 178);
+            this.btnSTexFile.Name = "btnSTexFile";
+            this.btnSTexFile.Size = new System.Drawing.Size(75, 40);
+            this.btnSTexFile.TabIndex = 3;
+            this.btnSTexFile.Text = "Search";
+            this.btnSTexFile.UseVisualStyleBackColor = true;
+            this.btnSTexFile.Click += new System.EventHandler(this.btnSTexFile_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 130);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 24);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Search :";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(98, 125);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(178, 29);
+            this.txtSearch.TabIndex = 4;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(296, 230);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnSTexFile);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtYear);
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnExtract);
             this.Name = "Main";
             this.Text = "Extract Text File";
             this.ResumeLayout(false);
@@ -89,10 +113,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnExtract;
         private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSTexFile;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }
 
